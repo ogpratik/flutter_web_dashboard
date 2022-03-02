@@ -15,9 +15,10 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: "Dash",
       theme: ThemeData(
-          scaffoldBackgroundColor: Colors.white,
-          textTheme: GoogleFonts.mulishTextTheme(Theme.of(context).textTheme)
-              .apply(bodycolor: Colors.black)),
+        scaffoldBackgroundColor: Colors.white,
+        textTheme: GoogleFonts.mulishTextTheme(Theme.of(context).textTheme)
+            .apply(bodyColor: Colors.black),
+      ),
       home: Container(),
     );
   }
