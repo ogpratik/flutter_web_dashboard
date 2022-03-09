@@ -59,11 +59,11 @@ class SideMenu extends StatelessWidget {
                           onTap: () {
                             if(item.route == AuthenticationPageRoute){
                               Get.offAllNamed(AuthenticationPageRoute);
-                              menuController.changeActiveItemTo(overviewPageDisplayName);
+                              menuController.changeActiveitemTo(overviewPageDisplayName);
 
                             }
                             if (!menuController.isActive(item.name)) {
-                              menuController.changeActiveItemTo(item.name);
+                              menuController.changeActiveitemTo(item.name);
                               if(ResponsiveWidget.isSmallScreen(context))
                               Get.back();
                               navigationController.navigateTo(item.route);

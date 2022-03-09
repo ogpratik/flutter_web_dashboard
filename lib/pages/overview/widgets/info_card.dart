@@ -4,7 +4,7 @@ import 'package:flutter_web_dashboard/constants/style.dart';
 class InfoCard extends StatelessWidget {
   final String title;
   final String value;
-  final Color topColor;
+  final Color? topColor;
   final bool isActive;
   final VoidCallback onTap;
 
@@ -14,7 +14,7 @@ class InfoCard extends StatelessWidget {
       required this.value,
       this.isActive = false,
       required this.onTap,
-      required this.topColor})
+      this.topColor})
       : super(key: key);
 
   @override
