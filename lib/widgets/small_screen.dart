@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_web_dashboard/helpers/local_navigator.dart';
 import 'package:flutter_web_dashboard/widgets/large_screen.dart';
 import 'package:get/get.dart';
 
@@ -7,9 +8,6 @@ class SmallScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      constraints: BoxConstraints.expand(),
-      color: Colors.green,
-    );
+    return localNavigator();
   }
 }
