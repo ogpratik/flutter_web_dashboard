@@ -1,15 +1,30 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_web_dashboard/constants/controllers.dart';
+import 'package:flutter_web_dashboard/helpers/responsiveness.dart';
 import 'package:flutter_web_dashboard/widgets/custom_text.dart';
+import 'package:get/get_state_manager/get_state_manager.dart';
 
 class OverviewPage extends StatelessWidget {
   const OverviewPage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return Center(
-      child: CustomText(
-        text: " overview",
-      ),
+    return Column(
+      children: [
+        Obx(() => Row(
+              children: [
+                Container(
+                  margin: EdgeInsets.only(
+                      top: ResponsiveWidget.isSmallScreen(context) ? 56 : 6),
+                  child: CustomText(
+                    text: menuController.activeItem.value,
+                    size: 24,
+                    weight: FontWeight.bold,
+                  ),
+                )
+              ],
+            ))
+      ],
     );
   }
 }
