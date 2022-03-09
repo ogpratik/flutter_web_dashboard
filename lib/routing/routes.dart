@@ -7,5 +7,5 @@ List sideMenuItems = [
   OverViewPageRoute,
   DriversPageRoute,
   ClientPageRoute,
-  AuthenticationPageRoute
+  AuthenticationPageRoute,
 ];

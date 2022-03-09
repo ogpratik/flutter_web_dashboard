@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_web_dashboard/helpers/local_navigator.dart';
 import 'package:get/get.dart';
 
 class LargeScreen extends StatelessWidget {
@@ -12,10 +13,9 @@ class LargeScreen extends StatelessWidget {
         color: Colors.red,
       )),
       Expanded(
-          flex: 5,
-          child: Container(
-            color: Colors.blue,
-          ))
+        flex: 5,
+        child: localNavigator(),
+      )
     ]);
   }
 }
