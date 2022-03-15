@@ -8,7 +8,7 @@ import 'package:get/route_manager.dart';
 class InfoCardSmall extends StatelessWidget {
   final String title;
   final String value;
-  final Color topColor;
+  final Color? topColor;
   final bool isActive;
   final VoidCallback onTap;
 
@@ -16,7 +16,7 @@ class InfoCardSmall extends StatelessWidget {
       {Key? key,
       required this.title,
       required this.value,
-      required this.topColor,
+      this.topColor,
       this.isActive = false,
       required this.onTap})
       : super(key: key);
@@ -38,15 +38,15 @@ class InfoCardSmall extends StatelessWidget {
               children: [
                 CustomText(
                   text: title,
-                  size: 24,
+                  size: 10,
                   weight: FontWeight.w300,
                   color: isActive ? active : lightgrey,
                 ),
                 CustomText(
-                  text: title,
-                  size: 24,
+                  text: value,
+                  size: 10,
                   weight: FontWeight.bold,
-                  color: isActive ? active : lightgrey,
+                  color: isActive ? active : dark,
                 ),
               ],
             ),
