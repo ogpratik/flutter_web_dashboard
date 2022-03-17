@@ -1,3 +1,5 @@
+// @dart=2.10.1
+
 import 'package:flutter/material.dart';
 import 'package:flutter_web_dashboard/constants/style.dart';
 import 'package:flutter_web_dashboard/controllers/menu_controller.dart';
